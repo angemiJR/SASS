@@ -1,0 +1,42 @@
+@import "fonts";
+@import "colors";
+
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.text_left {
+    width: 635px;
+
+}
+
+
+h1,
+h2,
+p {
+    font-family: $mainFont ;
+    color: $black ;
+}
+
+h2 {
+    color: $blue ;
+    font-weight: bold;
+    font-size: 22px;
+    position: relative;
+    bottom: 32px;
+}
+
+.blue {
+    color: $blue ;
+}
+
+h1 {
+    font-size: 40px;
+
+}
+
+.italic{
+    font-style: italic;
+}

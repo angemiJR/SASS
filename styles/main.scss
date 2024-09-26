@@ -1,5 +1,5 @@
 @import "fonts";
-
+@import "colors";
 
 
 
@@ -9,6 +9,8 @@ body {
     display: flex;
     justify-content: center;
     margin: 0;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -35,7 +37,7 @@ nav {
         text-decoration: none;
         font-family: $mainFont;
         font-size: $fontSize18pt;
-        color: black;
+        color:$black;
         font-weight: bold;
     }
 
@@ -49,4 +51,9 @@ a:hover{
     width: 180px;
     display: flex;
     justify-content: space-between;
+}
+
+main {
+    width: 80%;
+    margin-top: 100px;
 }
