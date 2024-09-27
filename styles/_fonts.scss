@@ -1,2 +1,18 @@
 $mainFont: "Mulish", sans-serif;
-$fontSize18pt:18px;
+$fontSize18pt: 18px;
+
+@mixin regular-text {
+    font-family: $mainFont ;
+    color: $black ;
+    font-size: 18px;
+}
+
+@mixin bold-text {
+    @include regular-text;
+    font-weight: bold;
+}
+
+@mixin italic-text {
+    @include regular-text;
+    font-style: italic;
+}

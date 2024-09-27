@@ -5,10 +5,12 @@
 
 
 body {
-    width: 100vw;
+    width: 80%;
+    max-width: 1110px;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
-    margin: 0;
+    margin: 0 auto;
     flex-direction: column;
     align-items: center;
 }
@@ -16,7 +18,7 @@ body {
 
 
 nav {
-    width: 80%;
+    width: 100%;
     margin-top: 25px;
     display: flex;
     justify-content: space-between;
@@ -33,27 +35,28 @@ nav {
         display: inline-block;
     }
 
-    a {
+    a { @include bold-text;
         text-decoration: none;
-        font-family: $mainFont;
-        font-size: $fontSize18pt;
-        color:$black;
-        font-weight: bold;
+        &:hover{
+            color: gray;
+        }
     }
 
 }
 
-a:hover{
-    color: gray;
-}
+
 
 .navigation{
-    width: 180px;
+    width: 200px;
     display: flex;
     justify-content: space-between;
 }
 
 main {
-    width: 80%;
+    width: 100%;
     margin-top: 100px;
 }
+
+p {
+    @include regular-text;
+    }
