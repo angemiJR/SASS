@@ -60,3 +60,38 @@ main {
 p {
     @include regular-text;
     }
+
+
+    footer {
+        width: 100%;
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    
+        .logo {
+            width: 100px;
+        }
+    
+        ul {
+            list-style: none;
+        }
+    
+        li {
+            display: inline-block;
+        }
+    
+        a { @include bold-text;
+            text-decoration: none;
+            &:hover{
+                color: gray;
+            }
+        }
+        .social{
+            max-width: 120px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+    
+    }
