@@ -1,5 +1,6 @@
 @import "fonts";
 @import "colors";
+@import "projects-styles";
 
 
 .container1 {
@@ -7,7 +8,7 @@
     justify-content: space-between;
 
     .text {
-        max-width: 66%;
+        max-width: 60%;
         height: 400px;
         display: flex;
         flex-direction: column;
@@ -20,6 +21,91 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(6, 1fr);
-        
+        border-bottom: 1px solid $gray;
+
+
+        .one {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            @include table;
+        }
+
+        .two {
+            grid-column: 1/2;
+            grid-row: 2/3;
+            @include table;
+        }
+
+        .three {
+            grid-column: 1/2;
+            grid-row: 3/4;
+            @include table;
+        }
+
+        .four {
+            grid-column: 1/2;
+            grid-row: 4/5;
+            @include table;
+        }
+
+        .five {
+            grid-column: 1/2;
+            grid-row: 5/6;
+            @include table;
+        }
+
+        .six {
+            grid-column: 1/2;
+            grid-row: 6/7;
+            @include table;
+        }
+
+        .seven {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            @include bold-text;
+            @include table;
+
+        }
+
+        .eight {
+            grid-column: 2/3;
+            grid-row: 2/3;
+            @include bold-text;
+            @include table;
+
+        }
+
+        .nine {
+            grid-column: 2/3;
+            grid-row: 3/4;
+            @include bold-text;
+            @include table;
+
+        }
+
+        .ten {
+            grid-column: 2/3;
+            grid-row: 4/5;
+            @include bold-text;
+            @include table;
+
+        }
+
+        .eleven {
+            grid-column: 2/3;
+            grid-row: 5/6;
+            @include bold-text;
+            @include table;
+
+        }
+
+        .twelve {
+            grid-column: 2/3;
+            grid-row: 6/7;
+            @include bold-text;
+            @include table;
+
+        }
     }
 }
