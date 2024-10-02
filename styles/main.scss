@@ -35,9 +35,11 @@ nav {
         display: inline-block;
     }
 
-    a { @include bold-text;
+    a {
+        @include bold-text;
         text-decoration: none;
-        &:hover{
+
+        &:hover {
             color: gray;
         }
     }
@@ -46,7 +48,7 @@ nav {
 
 
 
-.navigation{
+.navigation {
     width: 200px;
     display: flex;
     justify-content: space-between;
@@ -59,39 +61,68 @@ main {
 
 p {
     @include regular-text;
+}
+
+
+h1,
+h2 {
+    font-family: $mainFont ;
+    color: $black ;
+}
+
+h2 {
+    color: $blue ;
+    font-weight: bold;
+    font-size: 22pt;
+    position: relative;
+    bottom: 32px;
+}
+
+
+
+h1 {
+    font-size: 40pt;
+    font-weight: bold;
+
+    .blue {
+        color: $blue ;
+    }
+}
+
+
+footer {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    .logo {
+        width: 100px;
     }
 
+    ul {
+        list-style: none;
+    }
 
-    footer {
+    li {
+        display: inline-block;
+    }
+
+    a {
+        @include bold-text;
+        text-decoration: none;
+
+        &:hover {
+            color: gray;
+        }
+    }
+
+    .social {
+        max-width: 120px;
         width: 100%;
-        margin-top: 100px;
         display: flex;
         justify-content: space-between;
-        margin-bottom: 50px;
-    
-        .logo {
-            width: 100px;
-        }
-    
-        ul {
-            list-style: none;
-        }
-    
-        li {
-            display: inline-block;
-        }
-    
-        a { @include bold-text;
-            text-decoration: none;
-            &:hover{
-                color: gray;
-            }
-        }
-        .social{
-            max-width: 120px;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-        }
-    
     }
+
+}
