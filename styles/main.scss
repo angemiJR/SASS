@@ -90,6 +90,11 @@ h1 {
     }
 }
 
+.big_image{
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 45px;
+}
 
 footer {
     width: 100%;
@@ -97,6 +102,10 @@ footer {
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
+
+    .navigation{
+        transform: translateX(100%);
+    }
 
     .logo {
         width: 100px;
