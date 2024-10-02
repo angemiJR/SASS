@@ -1,0 +1,25 @@
+@import "fonts";
+@import "colors";
+
+
+.container1 {
+    display: flex;
+    justify-content: space-between;
+
+    .text {
+        max-width: 66%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .table {
+        width: 30%;
+        height: 400px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        
+    }
+}
