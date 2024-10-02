@@ -282,3 +282,23 @@
       -ms-flex-align: center;
           align-items: center;
 }
+
+.big_image {
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 45px;
+}
+
+.container2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 45px;
+}
+.container2 img {
+  width: 32%;
+}
