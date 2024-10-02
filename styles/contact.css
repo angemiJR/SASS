@@ -20,3 +20,63 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
+.container1 form {
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.container1 form .row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #D8D8D8;
+}
+.container1 form label {
+  font-family: "Mulish", sans-serif;
+  color: #111111;
+  font-size: 18px;
+  font-weight: bold;
+}
+.container1 form label:hover {
+  color: #D8D8D8;
+}
+.container1 form input,
+.container1 form textarea {
+  font-family: "Mulish", sans-serif;
+  color: #111111;
+  font-size: 18px;
+  border: none;
+}
+.container1 form textarea {
+  resize: none;
+}
+.container1 form button {
+  width: 125px;
+  height: 50px;
+  font-family: "Mulish", sans-serif;
+  color: #111111;
+  font-size: 18px;
+  color: white;
+  background-color: #4A4FF2;
+  border: none;
+}
+.container1 form button:hover {
+  background-color: #D8D8D8;
+}

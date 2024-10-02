@@ -1,16 +1,65 @@
 @import "fonts";
 @import "colors";
 
-.container1{
+.container1 {
     width: 100%;
     display: flex;
     justify-content: space-between;
 
-    .text{
+    .text {
         width: 48%;
         height: 400px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+    }
+
+    form {
+
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+
+
+        .row {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border-bottom: 1px solid $grey;
+        }
+
+        label {
+            @include bold-text;
+            &:hover{
+                color: $grey;
+            }
+        }
+
+        input,
+        textarea {
+            @include regular-text;
+            border: none;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+
+        button{
+            width: 125px;
+            height: 50px;
+            @include regular-text;
+            color: white;
+            background-color: $blue;
+            border: none;
+
+            &:hover{
+                background-color: $grey;
+            }
+        }
     }
 }
