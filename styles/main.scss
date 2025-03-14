@@ -1,5 +1,5 @@
-@import "fonts";
-@import "colors";
+@import "./fonts";
+@import "./colors";
 
 
 
@@ -42,7 +42,7 @@ nav {
         text-decoration: none;
 
         &:hover {
-            color:$grey;
+            color:$gray;
         }
     }
 
@@ -127,7 +127,7 @@ footer {
         text-decoration: none;
 
         &:hover {
-            color: $grey;
+            color: $gray;
         }
     }
 
